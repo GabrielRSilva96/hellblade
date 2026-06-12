@@ -644,3 +644,61 @@ p {
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    /* =========================
+       INDEX
+       ========================= */
+
+    .box-confirmacao {
+        width: 95%;
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .box-confirmacao label {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .box-confirmacao button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* =========================
+       INTRO
+       ========================= */
+
+    #intro {
+        background-position: center center;
+        background-attachment: scroll;
+    }
+
+    #intro .entrar {
+        position: absolute;
+        top: 50%;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        gap: 25px;
+        text-align: center;
+    }
+
+    #intro .entrar img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .botao {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    .botao::before,
+    .botao::after {
+        width: 130%;
+    }
+}
