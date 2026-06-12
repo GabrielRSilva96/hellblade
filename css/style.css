@@ -547,15 +547,80 @@ p {
     font-size: 10px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-    /* Ajustes gerais */
-    html,
-    body {
-        overflow-x: hidden;
+    /* Menu */
+    #cabecalho .container {
+        flex-wrap: wrap;
     }
 
-    /* Corrige backgrounds fixos em celulares */
+    /* Intro */
+    #intro .entrar {
+        left: 50% !important;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
+    /* História */
+    .historia {
+        width: 100%;
+    }
+
+    /* Conteúdo */
+    .conteudo {
+        padding: 15px;
+    }
+
+    .conteudo img {
+        width: 100%;
+    }
+
+    /* Personagens */
+    .personagens-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .personagem-card {
+        height: 400px;
+    }
+
+    /* Galeria */
+    .galeria-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .item img {
+        height: auto;
+    }
+
+    /* Boss */
+    .boss-container {
+        flex-direction: column;
+    }
+
+    .esquerda,
+    .direita {
+        max-width: 100%;
+    }
+
+    /* Desenvolvedora */
+    .dev {
+        width: 95% !important;
+        transform: none !important;
+    }
+
+    /* Recursos */
+    .recursos {
+        width: 95% !important;
+    }
+
+    /* Banner */
+    #banners img {
+        height: auto;
+    }
+
+    /* Fundos */
     #intro,
     #home,
     #personagens,
@@ -566,121 +631,16 @@ p {
         background-attachment: scroll;
     }
 
-    /* Títulos */
+    /* Textos */
     h1 {
-        font-size: 2rem;
-        text-align: center;
+        font-size: 28px;
     }
 
     h2 {
-        font-size: 1.5rem;
-        text-align: center;
+        font-size: 22px;
     }
 
     p {
-        font-size: 1rem;
-        line-height: 1.6;
+        font-size: 14px;
     }
-
-    /* Imagens */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Vídeos */
-    video,
-    iframe {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Containers */
-    .container,
-    .conteudo,
-    .content,
-    main {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    /* Personagens */
-    .personagens-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    /* Galeria */
-    .galeria-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
-    /* Cards */
-    .card,
-    .personagem-card,
-    .boss-card {
-        width: 100%;
-    }
-
-    /* Bosses */
-    .boss-container,
-    .boss-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Desenvolvedora */
-    .dev {
-        width: 100%;
-        max-width: 100%;
-        transform: none;
-        margin: 0 auto;
-    }
-
-    /* Recursos */
-    .recursos {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    /* Intro */
-    .entrar,
-    #entrar {
-        left: auto !important;
-        right: auto !important;
-        transform: none;
-        text-align: center;
-    }
-
-    /* Botões */
-    .botao {
-        font-size: 1.1rem;
-        padding: 10px 20px;
-    }
-
-    /* Menu */
-    nav ul {
-        width: 100%;
-    }
-
-    nav ul li {
-        text-align: center;
-    }
-
-    /* Modal */
-    #modal-img,
-    .modal-content {
-        width: 95%;
-        max-width: 95%;
-        height: auto;
-    }
-
-    /* Tabelas */
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
 }
