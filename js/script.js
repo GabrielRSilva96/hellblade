@@ -2,7 +2,7 @@ function entrarSite() {
     const confirmacao = document.getElementById("confirmacao");
 
     if (confirmacao.checked) {
-        window.location.href = "../pages/intro.html";
+        window.location.href = "pages/intro.html";
     } else {
         alert("Você precisa confirmar que tem 16 anos ou mais.");
     }
