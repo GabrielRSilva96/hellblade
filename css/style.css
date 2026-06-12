@@ -546,3 +546,141 @@ p {
     color: #fff;
     font-size: 10px;
 }
+
+@media (max-width: 768px) {
+
+    /* Ajustes gerais */
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Corrige backgrounds fixos em celulares */
+    #intro,
+    #home,
+    #personagens,
+    #galeria,
+    #boss-page,
+    #desenvolvedora,
+    #recursos {
+        background-attachment: scroll;
+    }
+
+    /* Títulos */
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Imagens */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Vídeos */
+    video,
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Containers */
+    .container,
+    .conteudo,
+    .content,
+    main {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Personagens */
+    .personagens-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Galeria */
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    /* Cards */
+    .card,
+    .personagem-card,
+    .boss-card {
+        width: 100%;
+    }
+
+    /* Bosses */
+    .boss-container,
+    .boss-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Desenvolvedora */
+    .dev {
+        width: 100%;
+        max-width: 100%;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    /* Recursos */
+    .recursos {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Intro */
+    .entrar,
+    #entrar {
+        left: auto !important;
+        right: auto !important;
+        transform: none;
+        text-align: center;
+    }
+
+    /* Botões */
+    .botao {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    /* Menu */
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    /* Modal */
+    #modal-img,
+    .modal-content {
+        width: 95%;
+        max-width: 95%;
+        height: auto;
+    }
+
+    /* Tabelas */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+}
