@@ -491,7 +491,7 @@ p {
     transition: transform 0.3s ease;
 }
 
-.boss-container img:hover{
+.boss-container img:hover {
     transform: scale(1.03);
 }
 
@@ -643,6 +643,37 @@ p {
     p {
         font-size: 14px;
     }
+}
+
+#btn-topo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 30px;
+    background: rgba(2, 20, 133, 0.585);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+#btn-topo.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#btn-topo:hover {
+    transform: translateY(-3px);
 }
 
 @media screen and (max-width: 768px) {

@@ -21,6 +21,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+
+    const btn = document.createElement('button');
+    btn.id = 'btn-topo';
+    btn.innerHTML = '↑ Voltar ao topo';
+
+    document.body.appendChild(btn);
+
+    window.addEventListener('scroll', () => {
+        btn.classList.toggle('show', window.scrollY > 300);
+    });
+
+    btn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+});
+
 $(document).ready(function () {
     $("#banners ul").bxSlider({
         auto: true,
