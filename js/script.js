@@ -41,7 +41,8 @@ $(document).ready(function () {
         mainClass: 'mfp-with-zoom mfp-img-mobile',
 
         image: {
-            verticalFit: true
+            verticalFit: true,
+            titleSrc: ''
         },
 
         gallery: {
